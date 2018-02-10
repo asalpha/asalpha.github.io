@@ -128,8 +128,12 @@ var canvasDots = function (colorOfNetwork = '#5cdb95', backgroundColor = '#05386
       ctx.fillStyle = colorOfNetwork;
       ctx.lineWidth = .2;
       ctx.strokeStyle = colorOfNetwork;
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      createDots();
+      dots.nb = (window.innerWidth * window.innerHeight) / 2000;
+      dots.distance = (window.innerWidth / window.innerHeight) * 30; 
+      dots.array = [];
+      createDots;
+
+
     });
   
 };
