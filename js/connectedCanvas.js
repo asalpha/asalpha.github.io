@@ -1,6 +1,34 @@
 
 
 
+
+
+var mousePosition = {
+  x: window.innerWidth / 2,
+  y: window.innerHeight / 2
+};
+
+
+var dots = {
+  nb: (window.innerWidth * window.innerHeight) / 2000,
+  distance: (window.innerWidth / window.innerHeight) * 30,
+  d_radius: 100,
+  array: []
+};
+    
+
+function Dot() {
+  this.x = Math.random() * window.innerWidth;
+  this.y = Math.random() * window.innerHeight;
+
+  this.vx = -.5 + Math.random();
+  this.vy = -.5 + Math.random();
+
+  this.radius = Math.random();
+}
+
+
+
 var canvasDots = function (colorOfNetwork = '#5cdb95', backgroundColor = '#05386b') {
 
   let body = document.querySelector('body');
@@ -23,42 +51,31 @@ var canvasDots = function (colorOfNetwork = '#5cdb95', backgroundColor = '#05386
 
     // Define details for the canvas element
     canvas.id = 'canvas';
-    canvas.width = w;
-    canvas.height = h;
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
     canvas.style.display = 'inline';
     canvas.style.background = backgroundColor;
 
     // Add the canvas element to the DOM
     document.querySelector('body').appendChild(canvas);
-
-    var colorDot = color = colorOfNetwork;
+  }
 
     // Detail for the look of the dots and lines
-    ctx.fillStyle = colorDot;
-    ctx.lineWidth = .1;
-    ctx.strokeStyle = color;
+    ctx.fillStyle = colorOfNetwork;
+    ctx.lineWidth = 0.2;
+    ctx.strokeStyle = colorOfNetwork;
+    // ctx.shadowColor = '#fff';
 
-    var mousePosition = {
-      x: 30 * canvas.width / 100,
-      y: 30 * canvas.height / 100
-    };
+// function Dot() {
+//   this.x = Math.random() * window.innerWidth;
+//   this.y = Math.random() * window.innerHeight;
 
-    var dots = {
-      nb: 350,
-      distance: 60,
-      d_radius: 100,
-      array: []
-    };
-    
-    function Dot() {
-      this.x = Math.random() * canvas.width;
-      this.y = Math.random() * canvas.height;
+//   this.vx = -.5 + Math.random();
+//   this.vy = -.5 + Math.random();
 
-      this.vx = -.5 + Math.random();
-      this.vy = -.5 + Math.random();
+//   this.radius = Math.random();
+// }
 
-      this.radius = Math.random();
-    }
 
     Dot.prototype = {
       create: function () {
@@ -122,12 +139,12 @@ var canvasDots = function (colorOfNetwork = '#5cdb95', backgroundColor = '#05386
       mousePosition.y = parameter.pageY;
     });
 
-    mousePosition.x = window.innerWidth / 2;
-    mousePosition.y = window.innerHeight / 2;
+    //mousePosition.x = window.innerWidth / 2;
+    //mousePosition.y = window.innerHeight / 2;
 
-    setInterval(createDots, 1000 / 30);
+    setInterval(createDots, 33.3333 );
 
-    window.addEventListener('resize', () => {
+    window.addEventListener('resize',() => {
       // re-define details for the canvas element on resive
       let canvas = document.getElementById('canvas');
       canvas.width = window.innerWidth;
@@ -139,8 +156,9 @@ var canvasDots = function (colorOfNetwork = '#5cdb95', backgroundColor = '#05386
       ctx.fillStyle = colorDot;
       ctx.lineWidth = .1;
       ctx.strokeStyle = color;
+      createDots;
     });
-  }
+  
 };
 
 
@@ -168,15 +186,17 @@ function rs() {
 
 var dorezise = function() {
     // window.alert("sometext");
-    w = window.innerWidth;
-    h = window.innerHeight;
+    // w = window.innerWidth;
+    // h = window.innerHeight;
     // window.alert(w);
     // window.alert(h);
+    ld();
 };
 
 var ld = function() {
     w = window.innerWidth;
     h = window.innerHeight;
+    //Dot();
     canvasDots();
 };
 
