@@ -1,7 +1,7 @@
 
 
 starCol = '#5cdb95';
-bkgrdCol = '#000';
+bkgrdCol = '#001021';
 speed = 33;
 
 
