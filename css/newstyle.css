@@ -207,23 +207,31 @@ html {
 
 .buttons {
   position: absolute;
+  right: 1%;
+  /*background-color: pink;*/
+  /*border-style: solid;*/
+  /*border-color: black;*/
+  height: 20%;
+  width: 50%;
 
 }
 
-.buttons li {
+.buttons button {
+  position: relative;
+  right: -7%;
+  top: 25%;
+  margin-right: 2%;
   display: table-cell;
-}
-
-
-.btn{
-  background-color: #5b5c5e;
-  line-height: 50px;
-  height: 10%;
-  width: 15%;
+  background-color: #000;
+  height: 40%;
+  width: 20%;
   text-align: center;
+  word-break: break-all;
   font-size: 100%; 
-  display: block;
+  display: inline-block;
+  border-radius: 10%;
 }
+
 
 
 .button26 {
@@ -233,7 +241,8 @@ html {
   -o-transition: all 0.5s;
   transition: all 0.5s;
   position: relative;
-  border: 1px solid rgba(255,255,255,0.5);
+  border: 2px solid rgba(255,255,255,0.75);
+  box-shadow: 0 0 0 1.7px #2a74d6;
   overflow: hidden;
 }
 
@@ -253,17 +262,17 @@ html {
   opacity: 1;
   -webkit-transform: translate(-13%,-190%) rotate(-30deg);
   transform: translate(-13%,-190%) rotate(-30deg);
-  border-bottom-width: 1px;
+  border-bottom-width: 3px;
   border-bottom-style: solid;
   border-bottom-color: rgba(255,255,255,1);
-  background-color: rgba(255,255,255,0.25);
+  background-color: rgba(255,255,255,0.45);
 }
 .button26::after{
   -webkit-transition-delay: 0.2s; /* Safari */
     transition-delay: 0.2s;
 }
 .button26:hover::before, .button26:hover::after{
-  opacity: 0;
+  opacity: 0.25;
   -webkit-transform: translate(0,0);
   transform: translate(0,0);  
 }
@@ -290,8 +299,8 @@ body {
 }
 
 .soc {
-  border-style: solid;
-  background: pink;
+/*  border-style: solid;
+  background: pink;*/
   position: absolute;
   height: 15%;
   width: 25%;
@@ -302,8 +311,8 @@ body {
 }
 
 .soc li {
-  position: relative;
-  background-color: yellow;
+/*  position: relative;
+  background-color: yellow;*/
   /*top: 50%;*/
   /*left: 0.5%;*/
   right: 5%;
