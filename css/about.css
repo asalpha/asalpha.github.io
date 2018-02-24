@@ -1,0 +1,51 @@
+
+html {
+	background-color: #001021;
+}
+
+
+.about {
+	background-color: pink;
+	position: absolute;
+	right: 0.1%;
+	width: 60%;
+	height: 90%;
+	color: #bbb;
+	padding-bottom: 60px;
+    text-align: center;
+    font-size: 17px;
+	font: inherit;
+	display: inline;
+}
+
+.title {
+	display: block;
+	background-color: white;
+	position: absolute;
+	top: 10%;
+	left: 3%;
+}
+
+.whoami {
+	display: block;
+background-color: red;
+}
+
+.education {
+	display: block;
+background-color: blue;
+}
+
+.passion {
+background-color: green;
+}
+
+.picture img {
+background-color: orange;
+height: 50%;
+width: 30%;
+}
+
+.skills {
+background-color: white;
+}

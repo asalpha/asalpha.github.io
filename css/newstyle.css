@@ -1,8 +1,8 @@
-
+/*
 html {
   overflow-y: hidden;
 }
-
+*/
 
 .buttons {
   position: absolute;
@@ -90,8 +90,8 @@ html {
   border-style: solid;
   background-color: black;
   top: 3.5%;
-  left: 2.5%;
-  color: rgba(255,255,255,1);
+  left: 3.5%;
+  /*color: rgba(255,255,255,1);*/
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
