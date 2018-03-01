@@ -16,6 +16,10 @@ ctx.fillStyle = starCol;
 ctx.lineWidth = 0.3;
 ctx.strokeStyle = starCol;
 
+scrollPos = {
+  x: window.pageXOffset ,
+  y: window.pageYOffset
+};
 
 mousePos = {
   x: window.innerWidth ,
@@ -96,9 +100,16 @@ var start = function () {
 
 
 document.addEventListener('mousemove', function (parameter) {
-    mousePos.x = parameter.pageX;
-    mousePos.y = parameter.pageY;
+    mousePos.x = parameter.pageX - scrollPos.x;
+    mousePos.y = parameter.pageY - scrollPos.y;
 });
+
+
+document.addEventListener('scroll', function (parameter) {
+    scrollPos.x = window.pageXOffset;
+    scrollPos.y = window.pageYOffset;
+});
+
 
 
 window.addEventListener('resize',() => {
