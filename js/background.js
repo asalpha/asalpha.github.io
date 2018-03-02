@@ -8,7 +8,9 @@ speed = 33;
 canvas = document.getElementById('canvas');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-canvas.style.background = bkgrdCol;
+// canvas.style.background = bkgrdCol;
+//   background: url(../images/bg/subscribe-pattern.png);
+//   background-repeat: repeat;
 
 
 ctx = canvas.getContext('2d');

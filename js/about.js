@@ -8,7 +8,7 @@ speed = 33;
 canvas = document.getElementById('canvas');
 canvas.width = window.innerWidth;
 canvas.height = window.outerHeight;
-canvas.style.background = bkgrdCol;
+// canvas.style.background = bkgrdCol;
 
 
 ctx = canvas.getContext('2d');

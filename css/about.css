@@ -11,13 +11,21 @@
 }
 
 
+.me-image h3 {
+  position: absolute;
+  top: 67%;
+  font-size: 30px;
+  font-weight: 600;
+  left: 43%;
+  color: #fff;
+}
+
+
 canvas {
     position: fixed;
-    width: 100%;;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    width: 100%;
+      background: url(../img/imageedit_1_2310896523.jpg);
+  background-size: 100% 100%;
 }
 
 
@@ -837,6 +845,7 @@ ul.portfolio li.active {
 
 .testimonial-word {
     padding-right: 20px;
+    padding-left: 20px;
     text-align: center;
 }
 
@@ -858,7 +867,7 @@ ul.portfolio li.active {
 .testimonial-word p {
     line-height: 25px;
     text-align: center;
-    padding-right: 7%;
+    padding-right: 3%;
     padding-left: 3%;
 }
 
@@ -3437,7 +3446,7 @@ footer {
   /*top: 75%;*/
     position: absolute;
   left: 50%;
-  transform: translatex(-60%);
+  transform: translatex(-50%);
 }
 
 .soc li {
