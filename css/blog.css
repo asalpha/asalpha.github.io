@@ -1,0 +1,245 @@
+/*
+html {
+  overflow-y: hidden;
+}
+*/
+
+.wrap {
+  position: absolute;
+  background-color: #000;
+  top: 55%;
+  left: 25%;
+  vertical-align: all;
+  border: solid 3px #2a74d6;
+  border-radius: 15%;
+  height: 100px;
+  width: 600px;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+
+
+}
+
+.coming {
+  left: 19%;
+  top: 20%;
+  position: absolute;
+  text-align: center;
+}
+
+
+
+.click {
+  position: absolute;
+  text-align: center;
+  left: 37%;
+  top: 50%;
+}
+
+
+
+
+
+.buttons {
+  position: absolute;
+  right: 1%;
+  height: 20%;
+  width: 48%;
+}
+
+.buttons button {
+  position: relative;
+  right: -8%;
+  top: 30%;
+  text-overflow: hidden;
+  margin-right: 2%; 
+  display: table-cell;
+  background-color: #000;
+  height: 40%;
+  width: 20%;
+  max-height: 70px;
+  max-width: 160px;
+  text-align: center;
+  word-break: break-all;
+  font-size: 100%; 
+  display: inline-block;
+  border-radius: 10%;
+  min-height:25px; 
+  min-width:50px;
+  cursor: pointer;
+}
+
+.mybutton span {
+  text-overflow: hidden;
+  font-size: 100%;
+}
+
+
+.mybutton {
+  color: rgba(255,255,255,1);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+  border: 2px solid rgba(255,255,255,0.75);
+  box-shadow: 0 0 0 1.7px #2a74d6;
+  overflow: hidden;
+}
+
+
+.mybutton::before, .mybutton::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 1;
+  -webkit-transform: translate(-13%,-190%) rotate(-30deg);
+  transform: translate(-13%,-190%) rotate(-30deg);
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(255,255,255,1);
+  background-color: rgba(255,255,255,0.45);
+}
+.mybutton::after{
+  -webkit-transition-delay: 0.2s; /* Safari */
+    transition-delay: 0.2s;
+}
+.mybutton:hover::before, .mybutton:hover::after{
+  opacity: 0.25;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0);  
+}
+
+
+
+.image {
+  position: absolute;
+  border-color: '#fff';
+  border-style: solid;
+  background-color: black;
+  top: 3.5%;
+  left: 3.5%;
+  /*color: rgba(255,255,255,1);*/
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 2px solid rgba(255,255,255,0.75);
+  box-shadow: 0 0 0 1.7px #2a74d6;
+  overflow: hidden;
+  background-color: #000;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../img/imageedit_1_2310896523.jpg);
+  background-size: 100% 100%;
+    /*border: 1px solid black;*/
+}
+
+
+body {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+
+}
+
+
+
+footer {
+  text-align: center;
+}
+
+.soc {
+  position: absolute;
+  height: 15%;
+  width: 25%;
+  bottom: 2%;
+  /*left: 30%;
+  right: 40%;*/
+  /*top: 75%;*/
+    position: absolute;
+  left: 50%;
+  transform: translatex(-60%);
+}
+
+.soc li {
+  display: table-cell;
+}
+
+.soc a {
+  display: block;
+  height: 75%;
+  width: 85%;
+  min-height: 30px;
+  min-width: 35px;
+}
+
+.soc svg {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.facebook:hover, .github:hover, .linkedin:hover, .email:hover, .icon-5:hover, .icon-6:hover {
+  border-radius: 100%;
+  color: #0e1a25;
+  fill: #0e1a25;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+
+.facebook {
+  color: #3b5998;
+  fill: #3b5998;
+}
+.facebook:hover {
+  background: #3b5998;
+}
+
+.github {
+  color: #26d991;
+  fill: #26d991;
+}
+.github:hover {
+  background: #26d991;
+}
+
+.linkedin {
+  color: #2691d9;
+  fill: #2691d9;
+}
+.linkedin:hover {
+  background: #2691d9;
+}
+
+.email {
+  color: #6ed926;
+  fill: #6ed926;
+}
+.email:hover {
+  background: #6ed926;
+}
+
+

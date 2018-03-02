@@ -152,8 +152,9 @@ fieldset {
 }
 
 .pattern-bg {
-	background: url(../images/bg/subscribe-pattern.png);
-	background-repeat: repeat;
+	background: url(../img/pattern.jpg);
+	  background-attachment: fixed;
+  background-repeat: repeat;
 }
 
 .grabbing {
