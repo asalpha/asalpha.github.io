@@ -69,6 +69,7 @@ html {
   min-height:25px; 
   min-width:50px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .mybutton span {

@@ -1,8 +1,4 @@
-/*
-html {
-  overflow-y: hidden;
-}
-*/
+
 
 .buttons {
   position: absolute;
@@ -31,6 +27,7 @@ html {
   min-height:25px; 
   min-width:50px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .mybutton span {
@@ -84,34 +81,12 @@ html {
 
 
 
-.image {
-  position: absolute;
-  border-color: '#fff';
-  border-style: solid;
-  background-color: black;
-  top: 3.5%;
-  left: 3.5%;
-  /*color: rgba(255,255,255,1);*/
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  border: 2px solid rgba(255,255,255,0.75);
-  box-shadow: 0 0 0 1.7px #2a74d6;
-  overflow: hidden;
-  background-color: #000;
-  border-radius: 10%;
-  cursor: pointer;
-}
-
-
 canvas {
   position: absolute;
   width: 100%;
   height: 100%;
   background: url(../img/imageedit_1_2310896523.jpg);
   background-size: 100% 100%;
-    /*border: 1px solid black;*/
 }
 
 
@@ -132,10 +107,7 @@ footer {
   height: 15%;
   width: 25%;
   bottom: 2%;
-  /*left: 30%;
-  right: 40%;*/
-  /*top: 75%;*/
-    position: absolute;
+  position: absolute;
   left: 50%;
   transform: translatex(-60%);
 }
@@ -158,12 +130,12 @@ footer {
   width: 100%;
 }
 
-.facebook:hover, .github:hover, .linkedin:hover, .email:hover, .icon-5:hover, .icon-6:hover {
+.facebook:hover, .github:hover, .linkedin:hover, .email:hover {
   border-radius: 100%;
   color: #0e1a25;
   fill: #0e1a25;
   -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  transform: scale(1.25);
   -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
   transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
   transition: background-color 0.5s, transform 0.5s ease-out;
