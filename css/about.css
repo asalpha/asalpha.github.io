@@ -378,7 +378,7 @@ tr > td:nth-child(2) {
 }
 
 .about-me-text {
-	padding: 50px;
+	padding: 40px;
 	background-color: #ffffff;
 	box-shadow: -2px 40px 34px -24px rgba(0, 0, 0, 0.2);
   border: solid var(--bordersize) var(--textbox);
