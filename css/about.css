@@ -13,6 +13,35 @@
 
 
 
+
+.logo {
+  position:absolute;
+  width:200px;
+  height:auto;
+  top: -7%;
+  left: -1%;
+  /*background-color: yellow;*/
+}
+
+
+.company {
+  position: absolute;
+  /*bottom: : 40%;*/
+  left: 29%;
+  /*bottom: 50%;*/
+  bottom: 10%;
+  /*color: #2a5faf;*/
+  color: #fff;
+  /*background-color: #fff;*/
+  font-family:  Times New Roman;
+  font-weight: 600;
+  font-size: 23px;
+}
+
+
+
+
+
 .buttons {
   position: absolute;
   right: 1%;
@@ -27,7 +56,7 @@
   text-overflow: hidden;
   margin-right: 2%; 
   display: table-cell;
-  background-color: #000;
+  background-color: transparent;
   height: 40%;
   width: 24.5%;
   max-height: 70px;
@@ -93,10 +122,6 @@
 }
 
 
-.me-image img {
-  border-radius: 2%;
-}
-
 
 
 .me-image h3 {
@@ -157,7 +182,11 @@ a {
 }
 
 .me-image img {
+  position: relative;
+  top: -50px;
+  /*background-color: pink;*/
   width: 80%;
+  border-radius: 2%;
 }
 
 a {
@@ -937,10 +966,11 @@ html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:1
   border: solid 7px var(--updown);
   border-left-color: var(--leftright);
   border-right-color: var(--leftright);
-  background: url(../images/bg/call-to-action.png);
+  /*background: url(../images/bg/call-to-action.png);
   background-attachment: fixed;
-  background-repeat: repeat;
+  background-repeat: repeat;*/
   margin-bottom: 50px;
+  background-color: transparent;
 }
 
 

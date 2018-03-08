@@ -1,5 +1,8 @@
 
 
+
+
+
 starCol = '#5cdb95';
 bkgrdCol = '#001021';
 speed = 33;
@@ -91,6 +94,8 @@ var start = function () {
     star.connect();
     star.move();
   }
+
+
   setInterval(makestars, speed); 
 };
 
@@ -116,3 +121,7 @@ window.addEventListener('resize',() => {
 
 
 window.onload = start();
+
+
+TweenMax.staggerFromTo('#lightBlueNumbers path',1,{alpha:1},{alpha:0,repeat:-1,y:"-=20"},0.3);
+TweenMax.staggerFromTo('#darkBlueNumbers path',1,{alpha:1},{alpha:0,repeat:-1},0.2);

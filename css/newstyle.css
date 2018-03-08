@@ -1,5 +1,31 @@
 
 
+.logo {
+  position:absolute;
+  width:200px;
+  height:auto;
+  top: -7%;
+  left: -1%;
+  /*background-color: yellow;*/
+}
+
+
+.company {
+  position: absolute;
+  /*bottom: : 40%;*/
+  left: 29%;
+  /*bottom: 50%;*/
+  bottom: 10%;
+  /*color: #2a5faf;*/
+  color: #fff;
+  /*background-color: #fff;*/
+  font-family:  Times New Roman;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 23px;
+}
+
+
 .buttons {
   position: absolute;
   right: 1%;
@@ -14,7 +40,7 @@
   text-overflow: hidden;
   margin-right: 2%; 
   display: table-cell;
-  background-color: #000;
+  background-color: transparent;
   height: 40%;
   width: 20%;
   max-height: 70px;
@@ -22,6 +48,7 @@
   text-align: center;
   word-break: break-all;
   font-size: 100%; 
+  /*font-family:  Times New Roman;*/
   display: inline-block;
   border-radius: 10%;
   min-height:25px; 
