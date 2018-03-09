@@ -73,7 +73,7 @@ html,
 body {
     height: 100%
 }
-
+/*
 ::selection {
     background-color: #f7639a;
     color: #ffffff;
@@ -82,7 +82,7 @@ body {
 ::-moz-selection {
     background-color: #f7639a;
     color: #ffffff;
-}
+}*/
 
 h1,
 h2,
