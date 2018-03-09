@@ -25,6 +25,17 @@
   font-size: 23px;
 }
 
+.intro {
+position: absolute;
+/*background-color: yellow;*/
+color: #fff;
+font-family:  Times New Roman;
+font-size: 25px;
+bottom: 30%;
+left: 18%;
+}
+
+
 
 .buttons {
   position: absolute;
